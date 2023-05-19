@@ -96,6 +96,10 @@ const Login = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
      Acceso 
    </Button>
+   <p>¿Olivide mi contraseña?<Link to="/passwordreset">Recuperar contraseña</Link></p>
+   <Button variant="contained" color="success" to="/signup" onClick={onSubmit}>
+     Registrarme 
+   </Button>
 
 {/* <p>¿No tienes una cuenta?<Link to="/signup">Regístrate</Link></p>*/}
 
