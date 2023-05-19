@@ -74,7 +74,7 @@ const Login = () => {
  };
  
  return <form style={{ display: "flex", flexDirection: "column", maxWidth: "300px", margin: "auto" }}>
-   <h1>Login</h1>
+   <h1>Acceso</h1>
    <TextField
      label="Email"
      type="email"
