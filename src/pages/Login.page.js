@@ -96,7 +96,11 @@ const Login = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
      Acceso 
    </Button>
+<<<<<<< HEAD
    <p>¿No tienes una cuenta?  <Link to="/signup">Regístrate</Link></p>
+=======
+   <p>D¿No tienes una cuenta?  <Link to="/signup">Inscribirse</Link></p>
+>>>>>>> fac537edeff7437a81542c101fc5c2ff30a08b7c
  </form>
 }
  
