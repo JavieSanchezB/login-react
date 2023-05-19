@@ -65,7 +65,7 @@ const Login = () => {
      }
    } catch (error) {
        if (error.statusCode === 401) {
-          alert("Invalid username/password. Try again!");
+          alert("Contraseña o Usuario incorrecto Intentar Nuevamente");
       } else {
           alert(error);
       }
@@ -94,9 +94,9 @@ const Login = () => {
      style={{ marginBottom: "1rem" }}
    />
    <Button variant="contained" color="primary" onClick={onSubmit}>
-     Login
+     Acceso 
    </Button>
-   <p>Don't have an account? <Link to="/signup">Signup</Link></p>
+   <p>¿No tienes una cuenta?  <Link to="/signup">Inscribirse</Link></p>
  </form>
 }
  
