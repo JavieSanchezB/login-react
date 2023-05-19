@@ -97,7 +97,7 @@ const Login = () => {
      Acceso 
    </Button>
 
-   <p>¿No tienes una cuenta?<Link to="/signup">Regístrate</Link></p>
+{/* <p>¿No tienes una cuenta?<Link to="/signup">Regístrate</Link></p>*/}
 
  </form>
 }
