@@ -8,6 +8,7 @@ const Login = () => {
  const location = useLocation();
  const url = '/signup';
 
+
  // We are consuming our user-management context to
  // get & set the user details here
  const { user, fetchUser, emailPasswordLogin } = useContext(UserContext);
@@ -97,13 +98,14 @@ const Login = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
      Acceso 
    </Button>
-   <p>¿Olivide mi contraseña?<Link to="/passwordreset"><br/>Recuperar contraseña</Link></p>
-
-   <a href={url}>
-   <Button variant="contained" color="success" >
+ 
+  <p>¿Olivide mi contraseña?<Link to="/passwordreset"> Recuperar contraseña</Link></p>
+   <Button variant="contained" color="success" href={url} >
      Registrarme 
    </Button>
-   </a>
+   
+
+  
 
 {/* <p>¿No tienes una cuenta?<Link to="/signup">Regístrate</Link></p>*/}
 
