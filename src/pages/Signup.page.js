@@ -60,7 +60,7 @@ const Signup = () => {
      style={{ marginBottom: "1rem" }}
    />
    <Button variant="contained" color="primary" onClick={onSubmit}>
-   Regístrase
+   Regístrarse
    </Button>
    <p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>
  </form>
