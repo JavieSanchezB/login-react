@@ -22,8 +22,8 @@ export default function Home() {
  
  return (
    <>
-     <h1>Bienvenido</h1>
-     <Button variant="contained" onClick={logOut}>Logout</Button>
+     <h1>Bienvenido,Primera vista</h1>
+     <Button variant="contained" onClick={logOut}>Cerrar Sesión</Button>
    </>
  )
 }
