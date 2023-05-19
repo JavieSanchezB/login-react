@@ -22,7 +22,7 @@ export default function Home() {
  
  return (
    <>
-     <h1>Welcome to Expengo</h1>
+     <h1>Bienvenido</h1>
      <Button variant="contained" onClick={logOut}>Logout</Button>
    </>
  )
