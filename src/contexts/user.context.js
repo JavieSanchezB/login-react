@@ -38,7 +38,7 @@ export const UserProvider = ({ children }) => {
       await app.emailPasswordAuth.sendResetPasswordEmail(email);
       // Since we are automatically confirming our users, we are going to log in
       // the user using the same credentials once the signup is complete.
-      return emailPasswordLogin(email);
+      return emailPasswordReset(email);
     } catch (error) {
       throw error;
     }
