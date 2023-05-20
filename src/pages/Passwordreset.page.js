@@ -10,8 +10,7 @@ const Passwordreset = () => {
  // As explained in the Login page.
  const { emailPasswordReset } = useContext(UserContext);
  const [form, setForm] = useState({
-   email: "",
-   password: ""
+   email: ""
  });
  
  // As explained in the Login page.
