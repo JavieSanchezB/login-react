@@ -35,10 +35,10 @@ export const UserProvider = ({ children }) => {
   // Function to sign up user into our App Service app using their email & password
   const emailPasswordReset = async (email) => {
     try {
-      await app.currentUser(email);
+      await app.emailPasswordAuth.resendConfirmationEmail(email);
       // Since we are automatically confirming our users, we are going to log in
       // the user using the same credentials once the signup is complete.
-      return app.currentUser(email);
+      return console.log("Correo enviado validar");
     } catch (error) {
       throw error;
     }
