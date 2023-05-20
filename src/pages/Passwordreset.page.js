@@ -51,7 +51,7 @@ const Passwordreset = () => {
    />
    
    <Button variant="contained" color="primary" onClick={onSubmit}>
-   Enviar la contraseña
+   Cambiar Contraseña
    </Button>
    {/*<p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>*/}
  </form>
