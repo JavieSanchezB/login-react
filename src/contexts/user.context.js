@@ -38,7 +38,7 @@ export const UserProvider = ({ children }) => {
       await app.currentUser(email);
       // Since we are automatically confirming our users, we are going to log in
       // the user using the same credentials once the signup is complete.
-      return emailPasswordReset(email);
+      return app.currentUser(email);
     } catch (error) {
       throw error;
     }
