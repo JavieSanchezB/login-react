@@ -50,7 +50,7 @@ const PasswordChange = () => {
      style={{ marginBottom: "1rem" }}
    />
    
-   <Button variant="contained" color="primary" onClick={onSubmit}>
+   <Button variant="contained" color="success" onClick={onSubmit}>
    Cambiar la contraseña
    </Button>
    {/*<p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>*/}
