@@ -1,19 +1,6 @@
 import { Button } from '@mui/material'
 import { useContext } from 'react';
-import { UserContext } from '../contexts/user.context';
-const { MongoClient } = require('mongodb');
-// or as an es module:
-// import { MongoClient } from 'mongodb'
-require("dotenv").config();
-const URI = process.env.URL_API_MONGO;
-
-// Connection URL
-const url = URI;
-const client = new MongoClient(url);
-
-// Database Name
-const dbName = process.env.DBNAME;
-
+import { UserContext } from '../contexts/user.context'
  
 export default function Home() {
  const { logOutUser } = useContext(UserContext);
