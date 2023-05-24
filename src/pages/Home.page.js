@@ -1,6 +1,10 @@
 import { Button } from '@mui/material'
 import { useContext } from 'react';
 import { UserContext } from '../contexts/user.context';
+import mongoose from 'mongoose';
+// Establece la conexión a la base de datos
+mongoose.connect('mongodb://localhost/nombre_de_la_base_de_datos', { useNewUrlParser: true, useUnifiedTopology: true });
+
  
 export default function Home() {
  const { logOutUser } = useContext(UserContext);
