@@ -1,6 +1,10 @@
 import { Button } from '@mui/material'
 import { useContext } from 'react';
+<<<<<<< HEAD
 import { UserContext } from '../contexts/user.context'
+=======
+import { UserContext } from '../contexts/user.context';
+>>>>>>> 6d4c61fe016610d7fb99c15ab5f1e4a336ae9206
  
 export default function Home() {
  const { logOutUser } = useContext(UserContext);
