@@ -2,7 +2,7 @@ import { Button, TextField } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/user.context";
- 
+import toast, { Toaster } from 'react-hot-toast';
 const Login = () => {
  const navigate = useNavigate();
  const location = useLocation();
@@ -104,7 +104,7 @@ const Login = () => {
      Registrarme 
    </Button>
    
-
+   <Toaster />
   
 
 {/* <p>¿No tienes una cuenta?<Link to="/signup">Regístrate</Link></p>*/}
