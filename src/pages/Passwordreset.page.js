@@ -36,7 +36,7 @@ const Passwordreset = () => {
        redirectNow();
      }
    } catch (error) {
-     alert(error);
+    toast('📧Ingrese el Email');
    }
  };
  
