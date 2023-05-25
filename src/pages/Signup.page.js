@@ -2,7 +2,7 @@ import { Button, TextField } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/user.context";
- 
+import toast, { Toaster } from 'react-hot-toast';
 const Signup = () => {
  const navigate = useNavigate();
  const location = useLocation();
@@ -35,7 +35,7 @@ const Signup = () => {
        redirectNow();
      }
    } catch (error) {
-     alert(error);
+    toast('❎Contraseña debe tener por lo menos 6 caracteres');
    }
  };
  
