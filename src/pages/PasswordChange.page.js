@@ -55,6 +55,7 @@ const PasswordChange = () => {
    <Button variant="contained" color="success" onClick={notify}>
    Cambiar la contraseña
    </Button>
+   <Toaster />
    {/*<p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>*/}
  </form>
 }
