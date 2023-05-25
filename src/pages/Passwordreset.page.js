@@ -2,6 +2,8 @@ import { Button, TextField } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/user.context";
+import toast, { Toaster } from 'react-hot-toast';
+const notify = () => toast('👌 Se envio el correo para el cambio de contraseña');
  
 const Passwordreset = () => {
  const navigate = useNavigate();
@@ -50,9 +52,10 @@ const Passwordreset = () => {
      style={{ marginBottom: "1rem" }}
    />
    
-   <Button variant="contained" color="primary" onClick={onSubmit}>
+   <Button variant="contained" color="primary" onClick={onSubmit} onFocus={notify}>
    Cambiar Contraseña
    </Button>
+   <Toaster />
    {/*<p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>*/}
  </form>
 }
