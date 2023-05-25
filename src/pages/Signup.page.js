@@ -62,6 +62,8 @@ const Signup = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
    Regístrarse
    </Button>
+   <Toaster />
+
    {/*<p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>*/}
  </form>
 }
