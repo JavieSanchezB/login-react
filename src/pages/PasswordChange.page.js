@@ -2,7 +2,9 @@ import { Button, TextField } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/user.context";
- 
+import toast, { Toaster } from 'react-hot-toast';
+const notify = () => toast('Se envio el correo para cambio');
+
 const PasswordChange = () => {
  const navigate = useNavigate();
  const location = useLocation();
@@ -50,7 +52,7 @@ const PasswordChange = () => {
      style={{ marginBottom: "1rem" }}
    />
    
-   <Button variant="contained" color="success" onClick={onSubmit}>
+   <Button variant="contained" color="success" onClick={notify}>
    Cambiar la contraseña
    </Button>
    {/*<p>¿Ya tienes una cuenta?<Link to="/login">Entra</Link></p>*/}
