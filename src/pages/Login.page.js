@@ -67,9 +67,9 @@ const Login = () => {
      }
    } catch (error) {
        if (error.statusCode === 401) {
-          alert("Contraseña o Usuario incorrecto Intentar Nuevamente");
+        toast('❎Contraseña o Usuario incorrecto Intentar Nuevamente');
       } else {
-          alert(error);
+        toast('❎Contraseña o Usuario incorrecto Intentar Nuevamente');
       }
  
    }
