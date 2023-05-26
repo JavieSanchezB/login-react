@@ -5,6 +5,23 @@ import { UserContext } from "../contexts/user.context";
 import toast, { Toaster } from 'react-hot-toast';
 const notify = () => toast('👌 Se generando el proceso para el cambio de contraseña');
 
+// Obtener el URI completo
+var uri = window.location.href;
+
+// Obtener la parte del path de la URL
+var path = window.location.pathname;
+
+// Obtener los parámetros de la URL
+var params = window.location.search;
+
+console.log("URI"+uri);
+
+console.log("PATH"+path);
+
+console.log("PARAMS"+params);
+
+
+
 const PasswordChange = () => {
  const navigate = useNavigate();
  const location = useLocation();
