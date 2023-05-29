@@ -19,27 +19,6 @@ console.log("URI"+uri);
 console.log("PATH"+path);
 
 console.log("PARAMS"+params);
-
-exports = ({ token, tokenId, username }) => {
-  // Validate the username
-  const isValidEmail = myCustomValidatorService.validate(username);
-
-  // Check if the user has access to this service
-  const isPrivileged =
-     myCustomAuthorizationService.hasAccess(username)
-
-  // Send a message to the user so that they can confirm themselves
-  const msgSendSuccessful = isValidEmail && isPrivileged
-     && mySmsService.send(username, token, tokenId)
-
-  if ( msgSendSuccessful ) {
-     return { status: 'pending' };
-  } else {
-     return { status: 'fail' };
-  }
-}
-
-
 const PasswordChange = () => {
  const navigate = useNavigate();
  const location = useLocation();
